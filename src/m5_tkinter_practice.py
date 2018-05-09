@@ -8,6 +8,9 @@ Authors: David Mutchler, Valerie Galluzzi, Mark Hays, Amanda Stouder,
 import tkinter
 from tkinter import ttk
 
+def print_hello():
+    """This is my simple function."""
+    print('hello')
 
 def main():
     """ Constructs a GUI with stuff on it. """
@@ -30,13 +33,14 @@ def main():
     #   ** put a Button on the Frame. **
     # ------------------------------------------------------------------
 
-    go_forward_button = ttk.Button(frame1, text='Mariah')
-    go_forward_button.grid()
+    say_hello_button = ttk.Button(frame1, text='Mariah')
+    say_hello_button.grid()
     # ------------------------------------------------------------------
-    # TODO: 5. After reading and understanding the m3e module,
+    # DONE: 5. After reading and understanding the m3e module,
     #   ** make your Button respond to a button-press **
     #   ** by printing   "Hello"  on the Console.     **
     # ------------------------------------------------------------------
+    say_hello_button['command'] = lambda: print('is a badass')
 
     # ------------------------------------------------------------------
     # TODO: 6. After reading and understanding the m4e module,
