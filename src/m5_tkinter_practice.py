@@ -20,6 +20,15 @@ def check_for_ok(entry_box):
     else:
         print('Goodbye')
 
+
+def amount_of_times(n):
+    contents = int(n.get())
+    if contents += 0:
+        print(contents)
+    else:
+        print("no")
+
+
 def main():
     """ Constructs a GUI with stuff on it. """
     # ------------------------------------------------------------------
@@ -89,6 +98,13 @@ def main():
     #      s = entry_box.get()
     #      n = int(s)
     ####################################################################
+
+    my_entry_box = ttk.Entry(frame1)
+    my_entry_box.grid()
+
+    press = ttk.Button(frame1, text='Press')
+    press.grid()
+    press['command'] = lambda: amount_of_times(n)
 
     # ------------------------------------------------------------------
     # TODO: 8. As time permits, do other interesting GUI things!
