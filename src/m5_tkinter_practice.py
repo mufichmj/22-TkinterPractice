@@ -33,14 +33,14 @@ def main():
     #   ** put a Button on the Frame. **
     # ------------------------------------------------------------------
 
-    say_hello_button = ttk.Button(frame1, text='Mariah')
+    say_hello_button = ttk.Button(frame1, text='My button')
     say_hello_button.grid()
     # ------------------------------------------------------------------
     # DONE: 5. After reading and understanding the m3e module,
     #   ** make your Button respond to a button-press **
     #   ** by printing   "Hello"  on the Console.     **
     # ------------------------------------------------------------------
-    say_hello_button['command'] = lambda: print('is a badass')
+    say_hello_button['command'] = lambda: print('hooyaa!')
 
     # ------------------------------------------------------------------
     # TODO: 6. After reading and understanding the m4e module,
